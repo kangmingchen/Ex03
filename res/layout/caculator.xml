@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_caculator_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_caculator_reduce"
+        android:layout_alignBottom="@+id/btn_caculator_reduce"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btn_caculator_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@+id/btn_caculator_add"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btn_calculator_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_caculator_reduce"
+        android:layout_alignBottom="@+id/btn_caculator_reduce"
+        android:layout_toRightOf="@+id/btn_caculator_reduce"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/btn_calculator_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_calculator_multiply"
+        android:layout_alignBottom="@+id/btn_calculator_multiply"
+        android:layout_toRightOf="@+id/btn_calculator_multiply"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/tv_calculator_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_calculator_resultsign"
+        android:layout_alignBottom="@+id/tv_calculator_resultsign"
+        android:layout_toRightOf="@+id/tv_calculator_resultsign"
+        />
+
+    <TextView
+        android:id="@+id/tv_calculator_resultsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_calculator_text2"
+        android:layout_alignBottom="@+id/et_calculator_text2"
+        android:layout_alignLeft="@+id/btn_calculator_divide"
+        android:layout_marginLeft="17dp"
+        android:text="=" />
+
+    <EditText
+        android:id="@+id/et_calculator_text2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_calculator_multiply"
+        android:layout_toLeftOf="@+id/btn_calculator_divide"
+        android:inputType="number"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_calcultator_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_calculator_text2"
+        android:layout_alignBottom="@+id/et_calculator_text2"
+        android:layout_alignRight="@+id/btn_caculator_reduce"
+        android:layout_marginRight="14dp"
+        android:text="+" />
+
+    <EditText
+        android:id="@+id/et_calculator_text1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_calcultator_sign"
+        android:layout_alignBottom="@+id/tv_calcultator_sign"
+        android:layout_marginRight="23dp"
+        android:layout_toLeftOf="@+id/tv_calcultator_sign"
+        android:inputType="number"
+        android:ems="10" />
+
+</RelativeLayout>

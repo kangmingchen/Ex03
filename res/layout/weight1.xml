@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_weight1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/weight_common_title" />
+
+    <TextView
+        android:id="@+id/tv_weight1_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/tv_weight1_title"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/tv_weight1_title"
+        android:text="@string/weight1_text_sex"
+        android:gravity="fill_vertical"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_weight1_height"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_weight1_height"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/rg_weight1_sex"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:layout_alignLeft="@+id/et_weight1_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_weight1_sex"
+        android:checkedButton="@+id/rb_weight1_sex_man"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_weight1_sex_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight1_radio_sex_man" />
+
+        <RadioButton
+            android:id="@+id/rb_weight1_sex_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight1_radio_sex_woman" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_weight1_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_weight1_height"
+        android:layout_alignTop="@+id/et_weight1_height"
+        android:layout_toRightOf="@+id/tv_weight1_title"
+        android:gravity="fill_vertical"
+        android:text="@string/weight_common_cm"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_weight1_height"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignRight="@+id/tv_weight1_sex"
+        android:layout_below="@+id/tv_weight1_sex"
+        android:layout_marginTop="25dp"
+        android:gravity="fill_vertical"
+        android:textSize="15sp"
+        android:text="@string/weight1_text_height" />
+
+    <Button
+        android:id="@+id/btn_weight1_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/weight_common_btn" />
+
+</RelativeLayout>

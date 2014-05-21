@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<Button
+	    android:id="@+id/btn_second_layout"
+	    android:layout_width="118dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tv_second_text"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="71dp"
+	    android:text="@string/second_layout_btn" />
+
+	<TextView
+	    android:id="@+id/tv_second_text"
+	    android:layout_width="186dp"
+	    android:layout_height="29dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="23dp"
+	    android:text="@string/second_text"
+	    android:textSize="24sp" />
+
+	<Button
+	    android:id="@+id/btn_second_activity"
+	    android:layout_width="118dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btn_second_layout"
+	    android:layout_below="@+id/btn_second_layout"
+	    android:layout_marginTop="38dp"
+	    android:text="@string/second_activity_btn" />
+
+</RelativeLayout>

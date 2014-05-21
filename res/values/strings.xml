@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">Ex03</string>
+    
+    <string name="common_back">返回上一页</string>
+    <string name="common_dialog">弹出对话框</string>
+    <string name="common_dialog_ok">确定</string>
+    <string name="common_dialog_cancel">取消</string>
+    <string name="common_str_exit">退出</string>
+    
+    <string name="menu_app_about">关于我们</string>
+    
+    <string name="main_oncreate_textview">Hello Text View</string>
+    <string name="main_link">欢迎访问Kenmy的博客：http://hi.baidu.com/sunsunsoso</string>
+    <string name="main_layout_btn">GO TO Layout2</string>
+    <string name="main_activity_btn">点击调用Second Activity</string>
+    <string name="main_btn_changecolor">点击字体变色</string>
+    <string name="main_btn_text"></string>
+    <string name="main_btn_calculator">简易计算器</string>
+     <string name="main_btn_menu">菜单</string>
+     <string name="main_btn_progress">程序加载中</string>
+     <string name="main_dialog_title">程序加载中</string>
+    
+    <string name="second_text">I\'m Second!</string>
+    <string name="second_layout_btn">GO TO Layout1</string>
+    <string name="second_activity_btn">点击调用Main Activity</string>
+    
+    <string name="weight_common_title">计算你/妳的标准体重！</string>
+    <string name="weight_common_cm">cm</string>
+    <string name="weight1_radio_sex_man">男性</string>
+    <string name="weight_common_btn">计算体重</string>
+    <string name="weight1_radio_sex_woman">女性</string>
+    <string name="weight1_text_height">身高：</string>
+    <string name="weight1_text_sex">性别：</string>
+    
+    
+</resources>
